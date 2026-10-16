@@ -29,3 +29,53 @@ public class Main {
     }
 }
 
+class Person {
+    void showName() {
+        System.out.println("Person: Rahul");
+    }
+}
+
+class Employee extends Person {
+    void showJob() {
+        System.out.println("Employee");
+    }
+}
+
+class Manager extends Employee {
+    void showRole() {
+        System.out.println("Manager");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Manager m = new Manager();
+        m.showName();
+        m.showJob();
+        m.showRole();
+    }
+}
+
+
+
+class Vehicle {
+    void start() {
+        System.out.println("Vehicle starts");
+    }
+}
+
+class Car extends Vehicle {
+    void drive() {
+        System.out.println("Car drives");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Car c = new Car();
+        c.start();
+        c.drive();
+    }
+}
+
+
